@@ -101,8 +101,8 @@ namespace Voice_calculator_console
                 return;
             }
 
-            double result = 0;
-            string operatorAsString = "", leftOperandAsString = "", rightOperandAsString = "";
+            int result = 0;
+            string operatorAsString = "", leftOperandAsString = "", rightOperandAsString = "", resultAsString = "";
             switch (parts[1])
             {
                 case "+":
@@ -110,18 +110,21 @@ namespace Voice_calculator_console
                     operatorAsString = "dodać";
                     leftOperandAsString = leftOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     rightOperandAsString = rightOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
+                    resultAsString = result.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     break;
                 case "-":
                     result = leftOperand - rightOperand;
                     operatorAsString = "odjąć";
                     leftOperandAsString = leftOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     rightOperandAsString = rightOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
+                    resultAsString = result.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     break;
                 case "*":
                     result = leftOperand * rightOperand;
                     operatorAsString = "razy";
                     leftOperandAsString = leftOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     rightOperandAsString = rightOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
+                    resultAsString = result.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     break;
                 case "/":
                     if (rightOperand == 0)
@@ -133,12 +136,13 @@ namespace Voice_calculator_console
                     operatorAsString = "podzielić przez";
                     leftOperandAsString = leftOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     rightOperandAsString = rightOperand.ToWords(new System.Globalization.CultureInfo("pl-PL"));
+                    resultAsString = result.ToWords(new System.Globalization.CultureInfo("pl-PL"));
                     break;
             }
 
             string resultToPrint = equation + " = " + result.ToString();
             equation = resultToPrint;
-            synthesizer.SpeakAsync("Wynik działania " + leftOperandAsString + " " + operatorAsString + " " + rightOperandAsString + " to " + result);
+            synthesizer.SpeakAsync("Wynik działania " + leftOperandAsString + " " + operatorAsString + " " + rightOperandAsString + " to " + resultAsString);
         }
 
         static void Main(string[] args)
