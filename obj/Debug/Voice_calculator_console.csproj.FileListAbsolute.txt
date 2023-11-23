@@ -1,0 +1,10 @@
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.csproj.AssemblyReference.cache
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.csproj.SuggestedBindingRedirects.cache
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.csproj.CoreCompileInputs.cache
+D:\Projekty\Voice_calculator_console\bin\Debug\Voice_calculator_console.exe.config
+D:\Projekty\Voice_calculator_console\bin\Debug\Voice_calculator_console.exe
+D:\Projekty\Voice_calculator_console\bin\Debug\Voice_calculator_console.pdb
+D:\Projekty\Voice_calculator_console\bin\Debug\Microsoft.Speech.dll
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.csproj.CopyComplete
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.exe
+D:\Projekty\Voice_calculator_console\obj\Debug\Voice_calculator_console.pdb
